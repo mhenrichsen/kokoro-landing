@@ -2,12 +2,6 @@ import Image from 'next/image'
 import { ArrowRight, Github, Cpu, Volume2, Code, Award } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
-interface FeatureCardProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}
-
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
@@ -19,7 +13,6 @@ export default function LandingPage() {
             <a href="#usage" className="hover:text-blue-400 transition-colors">Usage</a>
             <a href="https://discord.gg/QuGxSWBfQy" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Discord</a>
             <a href="https://huggingface.co/hexgrad/Kokoro-82M" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Hugging Face</a>
-            <a href="https://reddit.com/r/localllama" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">LocalLlama</a>
           </div>
         </nav>
       </header>
@@ -105,9 +98,9 @@ with open("output.mp3", "wb") as f:
 
       <footer className="bg-gray-900 py-8 mt-20">
         <div className="container mx-auto px-4 text-center">
-          <p>© I have copyrights of nothing. Just providing a free service with no strings attached.</p>
+          <p>© 2025 Kokoro TTS. All rights reserved.</p>
           <div className="mt-4">
-            <a href="https://github.com/remsky/Kokoro-FastAPI" target="_blank" rel="noopener noreferrer" className="inline-block">
+            <a href="https://github.com/your-repo" target="_blank" rel="noopener noreferrer" className="inline-block">
               <Github className="h-6 w-6" />
             </a>
           </div>
@@ -117,7 +110,7 @@ with open("output.mp3", "wb") as f:
   )
 }
 
-function FeatureCard({ icon, title, description }: FeatureCardProps) {
+function FeatureCard({ icon, title, description }) {
   return (
     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
       <div className="flex items-center justify-center mb-4">
