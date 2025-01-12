@@ -2,6 +2,12 @@ import Image from 'next/image'
 import { ArrowRight, Github, Cpu, Volume2, Code, Award } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
+interface FeatureCardProps {
+  icon: React.ReactNode;  // or JSX.Element if you're specifically passing JSX
+  title: string;
+  description: string;
+}
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
@@ -110,7 +116,7 @@ with open("output.mp3", "wb") as f:
   )
 }
 
-function FeatureCard({ icon, title, description }) {
+function FeatureCard({ icon, title, description }: FeatureCardProps) {
   return (
     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
       <div className="flex items-center justify-center mb-4">
