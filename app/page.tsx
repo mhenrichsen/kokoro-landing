@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { ArrowRight, Github, Cpu, Volume2, Code, Award } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 
