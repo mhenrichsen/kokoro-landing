@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kokoro-tts.com
+
+# Sitemaps
+Sitemap: https://kokoro-tts.com/sitemap.xml 
