@@ -11,7 +11,7 @@ export function ApiStatus() {
       try {
         const response = await fetch('https://api.kokorotts.com')
         setIsUp(response.ok)
-      } catch (_error) {
+      } catch {
         setIsUp(false)
       }
     }
