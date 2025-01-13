@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client"
-import { ArrowRight, Github, Cpu, Volume2, Code, Award, CheckCircle, XCircle } from 'lucide-react'
+import { ArrowRight, Github, Cpu, Volume2, Code, Award } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { useState, useEffect } from 'react'
 import { ApiStatus } from '@/components/ApiStatus'
 
 interface FeatureCardProps {
