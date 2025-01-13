@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
-import { ArrowRight, Github, Cpu, Volume2, Code, Award } from 'lucide-react'
+"use client"
+import { ArrowRight, Github, Cpu, Volume2, Code, Award, CheckCircle, XCircle } from 'lucide-react'
 import { Button } from "@/components/ui/button"
+import { useState, useEffect } from 'react'
+import { ApiStatus } from '@/components/ApiStatus'
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -14,7 +17,7 @@ export default function LandingPage() {
       <header className="container mx-auto px-4 py-8">
         <nav className="flex justify-between items-center">
           <div className="text-2xl font-bold">Kokoro TTS</div>
-          <div className="space-x-4">
+          <div className="flex items-center space-x-4">
             <a href="#features" className="hover:text-blue-400 transition-colors">Features</a>
             <a href="#usage" className="hover:text-blue-400 transition-colors">Usage</a>
             <a href="https://discord.gg/QuGxSWBfQy" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Discord</a>
@@ -35,8 +38,8 @@ export default function LandingPage() {
               </a>
             </Button>
             <Button asChild>
-              <a href="https://api.kokorotts.com" target="_blank" rel="noopener noreferrer">
-                API Docs <Code className="ml-2 h-4 w-4" />
+              <a href="https://api.kokorotts.com" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                <ApiStatus /> <Code className="mx-2 h-4 w-4" />
               </a>
             </Button>
           </div>
