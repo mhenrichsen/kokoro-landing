@@ -9,7 +9,7 @@ export function ApiStatus() {
   useEffect(() => {
     const checkStatus = async () => {
       try {
-        const response = await fetch('https://api.kokorotts.com')
+        const response = await fetch('https://api.kokorotts.com/docs')
         setIsUp(response.ok)
       } catch {
         setIsUp(false)
